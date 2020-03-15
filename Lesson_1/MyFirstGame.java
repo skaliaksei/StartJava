@@ -2,7 +2,6 @@ public class MyFirstGame {
     public static void main(String[] args) {
         boolean result = true; //index цикла
         int question = 8; //Загаданное число
-        int question = 8; //Загаданное число
         int answer = 15; //Первый ответ пользователя
         System.out.println("Comp: Guess my number, please");
         do {
