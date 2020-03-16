@@ -8,7 +8,7 @@ public class Variable {
         char index = 'i';
         boolean isGood = true;
 
-        System.out.println("core " + core + ", " + index + family + "-"+ model +"K, CPU "+ freq +" GHz, RAM "+ ram +" Gb");
+        System.out.println("core " + core + ", " + index + family + "-" + model + "K, CPU " + freq + " GHz, RAM " + ram + " Gb");
         System.out.println(isGood);
     }
 }
