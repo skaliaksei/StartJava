@@ -21,7 +21,7 @@ public class Cycle {
         do {
             if (k % 2 != 0) {
                 System.out.print(k + " ");
-                summ += k;
+                sumOdd += k;
             }
             k++;
         } while (k <= 20);
