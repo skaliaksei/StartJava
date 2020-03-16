@@ -28,8 +28,8 @@ public class Calculator {
         } else if (operation == '%') { // Деление по модулю
             result = num1 % num2;
             System.out.println(num1 + " % " + num2 + " = " + result);
-        } else { // Неизвестная команда вычисления
-            System.out.println("Command error");
+        } else { 
+            System.out.println("Command error"); // Неизвестная команда вычисления
         }
     }
 }
