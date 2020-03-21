@@ -23,7 +23,7 @@ public class Person {
     }
 
     boolean learnJava() {
-        System.out.println("Вы учите язык программирования");
+        System.out.println("Вы учите Java");
         return true;
     }
 }
