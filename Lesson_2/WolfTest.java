@@ -9,5 +9,10 @@ public class WolfTest {
         wolfOne.setColor("White");
 
         System.out.println("Name = " + wolfOne.getName() + ", age = " + wolfOne.getAge() + ", color = " + wolfOne.getColor() + ", weight = " + wolfOne.getWeight());
+        if(wolfOne.hunt()) {
+            System.out.println("Wolf hunting");
+        } else {
+            wolfOne.move();
+        }
     }
 }
