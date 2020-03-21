@@ -1,6 +1,6 @@
 public class Person {
     int age = 20;
-    String name = "Алекесей";
+    String name = "Алексей";
     String sex = "м";
     int height = 170;
     float weight = 65.3f;
