@@ -4,7 +4,7 @@ public class Calculator {
     private String operation;
     private int num2;
     private int result;
-    private boolean uncorrectOperation = true;
+    private boolean uncorrectOperation;
     private boolean correctText;
     private boolean replay;
 
@@ -33,30 +33,23 @@ public class Calculator {
         this.num2 = num2;
     }
 
-    // public int getResult() {
-    //     //Вычисление:
-    //     //int result = 0;
-    //     if (operation.equals("+")) {
-    //         return num1 + num2;
-    //     }
-    // }
-
+   
     
 
     public boolean getUncorrectOperation() {
         uncorrectOperation = false;
         if(operation.equals("+")) {
-            System.out.println("Command good");
+            //System.out.println("Command good");
         } else if(operation.equals("-")) {
-            System.out.println("Command good");
+            //System.out.println("Command good");
         } else if(operation.equals("*")) {
-            System.out.println("Command good");
+            //System.out.println("Command good");
         } else if(operation.equals("/")) {
-            System.out.println("Command good");
+           // System.out.println("Command good");
         } else if(operation.equals("^")) {
-            System.out.println("Command good");
+           // System.out.println("Command good");
         } else if(operation.equals("%")) {
-            System.out.println("Command good");
+           // System.out.println("Command good");
         } else {
             System.out.println("Command error");
             uncorrectOperation = true;
@@ -65,7 +58,6 @@ public class Calculator {
         }
 
     public int getResult() {
-        //uncorrectOperation = false;
         if(operation.equals("+")) {
             result = num1 + num2;
         } else if (operation.equals("-")) {
@@ -85,37 +77,7 @@ public class Calculator {
         return result;        
     }
 
-    
-//javac Calculator.java CalculatorTest.java
-//java CalculatorTest
-    // public int getResult() {
-    //     if(operation.equals("yes")) {
-    //         return num1 + num2;
-    //     }
-    // }
 
-    
-    // } else if (operation == '-') { // Вычитание
-    //     result = num1 - num2;
-    //     System.out.println(num1 + " - " + num2 + " = " + result);
-    // } else if (operation == '*') { // Умножение
-    //     result = num1 * num2;
-    //     System.out.println(num1 + " * " + num2 + " = " + result);
-    // } else if (operation == '/') { // Деление
-    //     result = num1 / num2;
-    //     System.out.println(num1 + " / " + num2 + " = " + result);
-    // } else if (operation == '^') { // Возведение в степень
-    //     result = num1;
-    //     for (int i = 1; i < num2; i++) {
-    //         result *= num1;
-    //     }
-    //     System.out.println(num1 + " ^ " + num2 + " = " + result);
-    // } else if (operation == '%') { // Деление по модулю
-    //     result = num1 % num2;
-    //     System.out.println(num1 + " % " + num2 + " = " + result);
-    // } else { 
-    //     System.out.println("Command error"); // Неизвестная команда вычисления
-    // }
     
 
     public boolean getCorrectText() {
