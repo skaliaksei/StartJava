@@ -26,10 +26,12 @@ public class CalculatorTest {
             casio.setNum1(scanNumbers.nextInt());
             
             do {
+
                 System.out.print("Enter operation: ");
                 casio.setOperation(scanOperations.nextLine());
+                
             } while(casio.getUncorrectOperation());
-            System.out.print(casio.getUncorrectOperation());
+            //System.out.print(casio.getUncorrectOperation());
             
             System.out.print("Enter second number: ");
             casio.setNum2(scanNumbers.nextInt());         

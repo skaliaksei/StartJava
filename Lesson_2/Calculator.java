@@ -4,7 +4,7 @@ public class Calculator {
     private String operation;
     private int num2;
     private int result;
-    private boolean uncorrectOperation;
+    private boolean uncorrectOperation = true;
     private boolean correctText;
     private boolean replay;
 
@@ -21,6 +21,7 @@ public class Calculator {
     }
 
     public void setOperation(String operation) {
+
         this.operation = operation;
     }
 
@@ -40,14 +41,31 @@ public class Calculator {
     //     }
     // }
 
+    
+
     public boolean getUncorrectOperation() {
-        return uncorrectOperation;
-    }
-
- 
-
+        uncorrectOperation = false;
+        if(operation.equals("+")) {
+            System.out.println("Command good");
+        } else if(operation.equals("-")) {
+            System.out.println("Command good");
+        } else if(operation.equals("*")) {
+            System.out.println("Command good");
+        } else if(operation.equals("/")) {
+            System.out.println("Command good");
+        } else if(operation.equals("^")) {
+            System.out.println("Command good");
+        } else if(operation.equals("%")) {
+            System.out.println("Command good");
+        } else {
+            System.out.println("Command error");
+            uncorrectOperation = true;
+        }
+            return uncorrectOperation;
+        }
 
     public int getResult() {
+        //uncorrectOperation = false;
         if(operation.equals("+")) {
             result = num1 + num2;
         } else if (operation.equals("-")) {
@@ -63,15 +81,13 @@ public class Calculator {
             }
         } else if (operation.equals("%")) {
             result = num1 % num2;
-        } else { 
-            System.out.println("Command error"); // Неизвестная команда вычисления
-            this.uncorrectOperation = true;
-        }
+        } 
         return result;        
     }
 
     
 //javac Calculator.java CalculatorTest.java
+//java CalculatorTest
     // public int getResult() {
     //     if(operation.equals("yes")) {
     //         return num1 + num2;
