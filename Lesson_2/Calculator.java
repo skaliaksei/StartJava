@@ -5,8 +5,8 @@ public class Calculator {
     private int num2;
     private int result;
     private boolean uncorrectOperation;
-    private boolean correctText;
-    private boolean replay;
+    private boolean uncorrectText;
+    private boolean isReplay;
 
     public int getNum1() {
         return num1;
@@ -31,10 +31,7 @@ public class Calculator {
 
     public void setNum2(int num2) {
         this.num2 = num2;
-    }
-
-   
-    
+    }    
 
     public boolean getUncorrectOperation() {
         uncorrectOperation = false;
@@ -77,35 +74,33 @@ public class Calculator {
         return result;        
     }
 
-
-    
-
-    public boolean getCorrectText() {
-        return correctText;
+    public boolean getUncorrectText() {
+        return uncorrectText;
     }
 
-    public void setCorrectText(String correctText) {
-        if (correctText.equals("yes")) {
-            this.correctText = false;
-        } else if (correctText.equals("no")) {
-            this.correctText = false;
+    public void setUncorrectText(String uncorrectText) {
+        if (uncorrectText.equals("yes")) {
+            this.uncorrectText = false;
+        } else if (uncorrectText.equals("no")) {
+            this.uncorrectText = false;
         } else {
-            this.correctText = true;
+            this.uncorrectText = true;
             System.out.println("Uncorrect command");
         }   
     }
 
 
-    public boolean getReplay() {
-        return replay;
+    public boolean getIsReplay() {
+        return isReplay;
     }
 
-    public void setReplay(String replay) {
-        if (replay.equals("yes")) {
-            this.replay = true;
-        } else if (replay.equals("no")) {
-            this.replay = false;
+    public void setIsReplay(String isReplay) {
+        if (isReplay.equals("yes")) {
+            this.isReplay = true;
+        } else if (isReplay.equals("no")) {
+            this.isReplay = false;
         }   
-    }
-    
+    }   
 }
+//javac Calculator.java CalculatorTest.java
+//java CalculatorTest
