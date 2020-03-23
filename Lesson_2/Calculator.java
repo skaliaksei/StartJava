@@ -33,28 +33,29 @@ public class Calculator {
         this.num2 = num2;
     }    
 
-    public boolean getUncorrectOperation() {
+    public boolean getUncorrectOperation() { //Метод проверки корректности ввода операции
         uncorrectOperation = false;
-        if(operation.equals("+")) {
-            //System.out.println("Command good");
-        } else if(operation.equals("-")) {
-            //System.out.println("Command good");
-        } else if(operation.equals("*")) {
-            //System.out.println("Command good");
-        } else if(operation.equals("/")) {
-           // System.out.println("Command good");
-        } else if(operation.equals("^")) {
-           // System.out.println("Command good");
-        } else if(operation.equals("%")) {
-           // System.out.println("Command good");
-        } else {
-            System.out.println("Command error");
-            uncorrectOperation = true;
+        switch(operation) {
+            case "+":
+                break;
+            case "*":
+                break;
+            case "-":
+                break;
+            case "/":
+                break;
+            case "^":
+                break;
+            case "%":
+                break;
+            default:
+                System.out.println("Command error");
+                uncorrectOperation = true;
         }
-            return uncorrectOperation;
-        }
+        return uncorrectOperation;
+    }
 
-    public int getResult() {
+    public int getResult() {             //Метод вычисления
         if(operation.equals("+")) {
             result = num1 + num2;
         } else if (operation.equals("-")) {
@@ -78,7 +79,7 @@ public class Calculator {
         return uncorrectText;
     }
 
-    public void setUncorrectText(String uncorrectText) {
+    public void setUncorrectText(String uncorrectText) { //Метод проверки корректности ввода yes/no
         if (uncorrectText.equals("yes")) {
             this.uncorrectText = false;
         } else if (uncorrectText.equals("no")) {
@@ -94,7 +95,7 @@ public class Calculator {
         return isReplay;
     }
 
-    public void setIsReplay(String isReplay) {
+    public void setIsReplay(String isReplay) { //Метод завершения/продолжения программы
         if (isReplay.equals("yes")) {
             this.isReplay = true;
         } else if (isReplay.equals("no")) {
@@ -102,5 +103,3 @@ public class Calculator {
         }   
     }   
 }
-//javac Calculator.java CalculatorTest.java
-//java CalculatorTest
